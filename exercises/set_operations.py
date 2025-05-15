@@ -21,3 +21,15 @@ def student_set_operations(set1, set2, operation):
     """
     # 请在下方编写代码
     pass
+    result1 = set(set1)
+    result2 = set(set2)
+    try:
+        if operation=="union" :
+            return result1 | result2
+        elif operation =="intersection":
+            return result1 & result2
+        elif operation =="difference":
+            return result1 - result2
+    except Exception as e:
+        return result1 
+    return result1 

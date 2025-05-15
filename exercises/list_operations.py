@@ -21,3 +21,16 @@ def student_list_operations(students, operation, *args):
     """
     # 请在下方编写代码
     pass 
+    result = list(students)
+    try:
+        if operation=="add" :
+            result.append(args[0])
+        elif operation =="remove":
+            result.remove(args[0])
+        elif operation =="update":
+            index = result.index(args[0])
+            result[index] = args[1]
+    except Exception as e:
+        return students  
+    
+    return result

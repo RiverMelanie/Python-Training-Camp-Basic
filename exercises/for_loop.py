@@ -18,4 +18,10 @@ def sum_numbers(n):
     - 从1到n的所有整数之和
     """
     # 请在下方编写代码
-    pass 
+    pass
+    sum =0
+    for i in range(1,n+1) :
+        sum +=i
+        i+=1
+    else:
+        return sum

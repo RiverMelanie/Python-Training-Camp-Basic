@@ -22,3 +22,7 @@ def calculate_area(length, width=None):
     """
     # 请在下方编写代码
     pass 
+    if width==None:
+        width = length
+    a=length*width
+    return a

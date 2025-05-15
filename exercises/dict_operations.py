@@ -21,3 +21,24 @@ def student_dict_operations(students_dict, operation, *args):
     """
     # 请在下方编写代码
     pass 
+    result = dict(students_dict)
+    try:
+        if operation=="add" :
+            name, score = args
+            result[name] = score
+            return result
+        elif operation =="remove":
+            name = args[0]
+            del result[name]
+            return result
+        elif operation =="update":
+            name, new_score = args
+            result[name] = new_score
+            return result
+        elif operation =="get":
+            name = args[0]
+            return result[name]
+    except Exception as e:
+        return students_dict 
+    
+    return result 

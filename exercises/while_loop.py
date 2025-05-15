@@ -20,3 +20,12 @@ def find_first_even(numbers):
     """
     # 请在下方编写代码
     pass 
+    a=len(numbers)
+    i=0
+    while i<a:
+        if numbers[i]%2 == 0:
+            return numbers[i]
+            break
+        i +=1
+    else:
+        return None
